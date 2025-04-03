@@ -5,8 +5,8 @@ def multiply(num1, num2):
 # In case you need to add more than two nums
 
 
-def addition(*args):
-    return sum(args)
+def addition(num1, num2):
+    return num1 + num2
 
 
 def subtraction(num1, num2):
@@ -21,4 +21,8 @@ def square(num):
     return num * num
 
 
-print(addition(1, 3, 4, 5))
+print(square(10))
+print(subtraction(13, 3))
+print(addition(10, 60))
+print(division(100, 10))
+print(square(multiply(2, 5)))
