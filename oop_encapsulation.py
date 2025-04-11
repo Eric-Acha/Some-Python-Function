@@ -9,9 +9,8 @@ class PlayerCharacter:
 
     def greetings(self):
         print(f"Hello {self.name}, you are {self.age} years old.")
-        return 'done'
 
 
 player1 = PlayerCharacter('John', 35)
 
-print(player1.greetings())
+player1.greetings()
