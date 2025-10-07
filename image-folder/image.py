@@ -1,6 +1,7 @@
 from PIL import Image, ImageFilter
 
 img = Image.open('snail.jpg')
-filtered_img = img.filter(ImageFilter.SMOOTH)
+filtered_img = img.convert('L')
+resize = filtered_img.resize((710, 640))
 
-filtered_img.save("smooth.png", 'png')
+resize.save("Grey.png", 'png')
