@@ -1,7 +1,9 @@
 from PIL import Image, ImageFilter
 
-img = Image.open('snail.jpg')
-filtered_img = img.convert('L')
-resize = filtered_img.resize((710, 640))
+img = Image.open('lion.jpg')
 
-resize.save("Grey.png", 'png')
+
+box = (100, 100, 400, 400)
+region = img.crop(box)
+
+region.save("lion.png", 'png')
