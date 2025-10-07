@@ -1,12 +1,10 @@
 import re
 
-pattern = re.compile(r"([a-zA-Z]).([a])")
-string = 'search inside this text please!'
+pattern = re.compile(r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")
+string = 'eric2233+-@123gstwffff.com'
 
 
 a = pattern.search(string)
-b = pattern.findall(string)
-c = pattern.fullmatch(string)
-d = pattern.match(string)
 
-print(a.group(2))
+
+print(a)
