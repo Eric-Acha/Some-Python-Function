@@ -4,6 +4,9 @@ import main
 
 
 class TestMain(unittest.TestCase):
+    def setUp(self):
+        print('About to test the do_stuff function')
+
     def test_do_stuff(self):
         test_param = 10
         result = main.do_stuff(test_param)
@@ -24,6 +27,9 @@ class TestMain(unittest.TestCase):
         test_param = ''
         result = main.do_stuff(test_param)
         self.assertEqual(result, 'please enter number')
+
+    def tearDown(self):
+        print('Cleaning up')
 
 
 if __name__ == "__main__":
