@@ -1,10 +1,15 @@
 from PIL import Image, ImageFilter
 
-img = Image.open('profile3.png')
+img = Image.open('cypic.webp')
 
-img.thumbnail((50, 50))
+img.resize((500, 300))
 
-img.save('profile4.png')
+
+img.save('cypic.png', 'png')
+
+# img.thumbnail((50, 50))
+
+# img.save('profile4.png')
 
 
 # img.filter(ImageFilter.SMOOTH)
