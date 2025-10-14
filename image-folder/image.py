@@ -2,7 +2,7 @@ from PIL import Image, ImageFilter
 
 img = Image.open('cypic.webp')
 
-img.resize((500, 300))
+img.resize((300, 300))
 
 
 img.save('cypic.png', 'png')
