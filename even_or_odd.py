@@ -7,7 +7,9 @@
 
 # print(is_even(19))
 
+#This function is still under construction
+
 # def func (a,b):
 #     return b ** a
-# print(func(b=2,2))
-print(1/5)
+ # print(func(b=2,2))
+#print(1/5)
