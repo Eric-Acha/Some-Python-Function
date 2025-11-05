@@ -2,10 +2,10 @@
 
 class playerCharacter:
 
-    membership = True  # Class obj attribute
+    membership = True  # Setting the Class obj attribute
 
     def __init__(self, name, age):
-        if (self.membership):
+        if (self.membership): #Passing the class obj attribute
 
             self.name = name
             self.age = age
